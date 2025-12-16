@@ -28,7 +28,7 @@ export default function Home() {
           <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold tracking-tighter mb-8 leading-[0.95]">Navneet Yadav</h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-2xl leading-relaxed">
             Dual-degree AI/ML and Data Science student building end-to-end machine learning and agentic AI systems from
-            RAG pipelines and LLM-powered analytics to production-grade FastAPI services
+            RAG pipelines and LLM-powered analytics to production-grade FastAPI services.
           </p>
           <div className="flex flex-wrap gap-3">
             <Button asChild size="lg" className="gap-2">
