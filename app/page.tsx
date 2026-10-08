@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
-import { Github, Linkedin, Mail, GraduationCap, ArrowUpRight } from "lucide-react"
+import { Github, Linkedin, Mail, ArrowUpRight, Sparkles, Bot, FileText } from "lucide-react"
 
 export default function Home() {
   return (
@@ -16,6 +16,15 @@ export default function Home() {
               <Link href="#about" className="text-muted-foreground hover:text-foreground transition-colors">about</Link>
               <Link href="#projects" className="text-muted-foreground hover:text-foreground transition-colors">projects</Link>
               <Link href="#experience" className="text-muted-foreground hover:text-foreground transition-colors">experience</Link>
+              <Link
+                href="/life-dump"
+                className="inline-flex items-center gap-1.5 font-medium text-foreground hover:text-primary transition-colors"
+              >
+                <span>life dump</span>
+                <span className="text-[10px] font-mono px-1.5 py-0.5 bg-primary/10 text-primary border border-primary/30 rounded-full">
+                  ai
+                </span>
+              </Link>
               <Link href="#contact" className="text-muted-foreground hover:text-foreground transition-colors">contact</Link>
             </div>
           </div>
@@ -34,7 +43,13 @@ export default function Home() {
             <Button asChild size="lg" className="gap-2">
               <Link href="#projects">View Work <ArrowUpRight className="h-4 w-4" /></Link>
             </Button>
-            <Button asChild variant="outline" size="lg">
+            <Button asChild variant="outline" size="lg" className="gap-2 border-primary/40 hover:border-primary">
+              <Link href="/life-dump">
+                <Sparkles className="h-4 w-4 text-emerald-500" />
+                Ask AI (Life Dump)
+              </Link>
+            </Button>
+            <Button asChild variant="ghost" size="lg">
               <Link href="#contact">Get in Touch</Link>
             </Button>
           </div>
@@ -135,6 +150,44 @@ export default function Home() {
                   assistants, enhanced conversational systems for neuroscience research, and developed FastAPI-based
                   analytics dashboards with integrated MCP chatbots.
                 </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Life Dump & Agent Context Highlight Section */}
+      <section className="border-t border-border bg-gradient-to-b from-muted/30 to-background">
+        <div className="container mx-auto px-4 md:px-6 py-24 md:py-32">
+          <div className="max-w-4xl mx-auto rounded-2xl border border-primary/20 bg-card/60 backdrop-blur-xs p-8 md:p-12 relative overflow-hidden">
+            <div className="absolute top-0 right-0 p-8 opacity-10 pointer-events-none hidden md:block">
+              <Bot className="h-48 w-48 text-primary" />
+            </div>
+            <div className="relative z-10 space-y-5">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-xs font-mono text-primary">
+                <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" />
+                AGENT-FIRST ARCHITECTURE // llms.txt PROTOCOL
+              </div>
+              <h2 className="text-3xl md:text-5xl font-bold tracking-tight">
+                Why compress a mind into a 1-page resume?
+              </h2>
+              <p className="text-muted-foreground text-lg leading-relaxed max-w-2xl">
+                With 1M+ token context windows, standard 1-page PDFs filter out what truly makes an engineer exceptional.
+                Feed my unfiltered engineering logs, architectural decisions, and project deep dives directly into{" "}
+                <strong className="text-foreground">ChatGPT, Claude, or Gemini</strong> with 1 click.
+              </p>
+              <div className="pt-2 flex flex-wrap gap-3 items-center">
+                <Button asChild size="lg" className="gap-2">
+                  <Link href="/life-dump">
+                    <Sparkles className="h-4 w-4" />
+                    Open Life Dump & Prompt LLMs
+                  </Link>
+                </Button>
+                <Button asChild variant="outline" size="lg" className="gap-2 font-mono text-xs">
+                  <a href="/Portfolio/life-dump-raw.txt" target="_blank" rel="noopener noreferrer">
+                    <FileText className="h-4 w-4" /> Raw Context (.txt)
+                  </a>
+                </Button>
               </div>
             </div>
           </div>

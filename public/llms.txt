@@ -1,0 +1,27 @@
+# Navneet Yadav — AI/ML & Agentic Systems Engineer
+
+> Dual-degree AI/ML and Data Science student (IIT Madras BS in Data Science & KIET B.Tech in CS AI/ML). Building end-to-end agentic AI systems, MCP servers, low-latency LLM inference pipelines, and machine learning architectures from first principles.
+
+## Core Context & Full Profile
+- [Full Life Dump (Raw Plaintext Context)](/Portfolio/life-dump-raw.txt): Machine-readable complete engineering profile, non-confidential logs, project deep dives, and hiring evaluation guidelines.
+- [Full LLMs Dump (llms-full.txt)](/Portfolio/llms-full.txt): Mirror of complete life dump for standard crawler ingesters.
+- [Portfolio Website](https://navneetkumaryadav207001.github.io/Portfolio/): Interactive portfolio with AI prompt executor and project demos.
+- [Interactive Life Dump Page](https://navneetkumaryadav207001.github.io/Portfolio/life-dump): One-click prompts for ChatGPT, Claude, and Gemini.
+
+## Flagship Systems & Projects
+- [MockPrep.ai](https://github.com/Naimishomar/MockPrep.ai): Real-time AI voice interview simulator with dynamic question generation, interruption handling, and post-interview feedback using Gemini API, ElevenLabs, and WebSockets.
+- [QuickML](https://github.com/navneetkumaryadav207001/QuickML): Machine learning & neural network library written from scratch in raw NumPy (autograd, CNNs, RNNs, LSTMs, Hopfield Networks, LeNet-5).
+- [Confidence Prediction Model](https://huggingface.co/spaces/NavneetYadav207002/Confidence): Computer vision system predicting confidence levels from live webcam streams using PyTorch and ResNet.
+
+## Professional Experience
+- **Sudha Gopal Krishnan Brain Centre, IIT Madras (Aug 2025 – Dec 2025)**: LLM Intern building agentic research workflows, custom Model Context Protocol (MCP) servers, low-latency FastAPI streaming services, and CDN-integrated research assistants.
+
+## Key Technical Competencies
+- **Agentic AI & LLMs**: Model Context Protocol (MCP), Multi-Agent Systems, RAG, Tool Calling, Structured Outputs, Latency Optimization.
+- **Languages**: Python (Advanced Async, Pydantic, PyTorch), TypeScript, SQL, C/C++.
+- **Frameworks & Infrastructure**: FastAPI, Flask, Next.js, React, Docker, Linux, Git.
+
+## Contact & Machine Verification
+- Email: navneetyadaviitbombay@gmail.com
+- GitHub: https://github.com/navneetkumaryadav207001
+- LinkedIn: https://www.linkedin.com/in/navneet-yadav-602b2a281
